@@ -1,0 +1,28 @@
+{
+  "name": "react-nodebird-back",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "author": "yoonseok",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.0.1",
+    "passport": "^0.5.3",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
