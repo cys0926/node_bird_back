@@ -10,6 +10,7 @@ const passportConfig = require("./passport");
 const passport = require("passport");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
+const path = require("path");
 
 dotenv.config();
 const app = express();
@@ -31,6 +32,7 @@ app.use(
 );
 // 프론트에서 보낸 데이터를 req.body 에 담는 역할
 // 반드시 다른 코드들 보다 위에 작성해야 함
+app.use("/", express.static(path.join(__dirname, "uploads")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser(process.env.COOKIE_SECRET));
